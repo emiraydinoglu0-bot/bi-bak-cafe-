@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Bi Bak Cafe menüsü. Sucuk ekmek, tost, patso, kahvaltı ve içecek çeşitleri.">
+  <title>Bi Bak Cafe | Menü</title>
+  <style>
+    :root{--bg:#101010;--panel:#191919;--panel2:#202020;--orange:#ff7900;--orange2:#ff9b35;--text:#f7f4ef;--muted:#b8b4ae;--line:#35312d}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at top,#24201b 0,#101010 42%,#0b0b0b 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+    .wrap{max-width:1040px;margin:auto;padding:0 18px 52px}
+    header{padding:42px 0 26px;text-align:center;position:relative}
+    .eyebrow{color:var(--orange2);font-size:.76rem;font-weight:800;letter-spacing:.28em;text-transform:uppercase}
+    h1{margin:8px 0 0;font-size:clamp(3.2rem,10vw,6.6rem);line-height:.98;letter-spacing:.03em;font-weight:950}
+    h1 span{color:var(--orange)}
+    .subtitle{margin:15px auto 0;color:var(--muted);font-size:1rem}
+    .brand{display:inline-block;margin-top:22px;font-size:1.8rem;font-weight:900;font-style:italic;letter-spacing:-.04em}
+    .brand span{color:var(--orange)}
+    .brand small{display:block;font-size:.68rem;letter-spacing:.42em;font-style:normal;color:#fff;margin-top:3px}
+    .topline{height:3px;width:100px;margin:25px auto 0;background:linear-gradient(90deg,transparent,var(--orange),transparent)}
+    .nav{display:flex;gap:9px;overflow-x:auto;padding:12px 2px 18px;scrollbar-width:thin;position:sticky;top:0;z-index:5;background:rgba(16,16,16,.92);backdrop-filter:blur(12px)}
+    .nav a{flex:0 0 auto;color:#eae6df;text-decoration:none;border:1px solid #39332d;background:#1b1a18;padding:10px 14px;border-radius:999px;font-size:.83rem;font-weight:700}
+    .nav a:hover,.nav a:focus{background:var(--orange);border-color:var(--orange);color:#111}
+    .section{margin:24px 0 32px;scroll-margin-top:88px}
+    .section-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+    .section-head .bar{width:5px;height:30px;background:var(--orange);border-radius:5px}
+    h2{font-size:1.25rem;letter-spacing:.07em;text-transform:uppercase;margin:0;font-weight:900}
+    .count{margin-left:auto;color:#8f8981;font-size:.76rem}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .item{background:linear-gradient(135deg,rgba(34,33,31,.98),rgba(23,23,23,.98));border:1px solid var(--line);border-radius:14px;padding:15px 16px;display:flex;align-items:flex-start;gap:14px;justify-content:space-between;min-width:0}
+    .item-name{font-weight:750;line-height:1.35}
+    .desc{color:var(--muted);font-size:.82rem;line-height:1.55;margin-top:7px}
+    .price{white-space:nowrap;color:var(--orange2);font-weight:900;font-size:1rem}
+    .footer{border-top:1px solid var(--line);margin-top:42px;padding-top:28px;text-align:center;color:var(--muted);font-size:.88rem}
+    .footer .brand{margin-top:0;font-size:2.1rem}
+    .footer .note{margin-top:14px}
+    @media(max-width:600px){.wrap{padding:0 13px 36px}header{padding-top:30px}.grid{grid-template-columns:1fr}.item{padding:14px}.nav{margin:0 -13px;padding-left:13px;padding-right:13px}.section{margin-top:22px}h2{font-size:1.1rem}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Lezzetin adresi</div>
+    <h1>MEN<span>Ü</span></h1>
+    <p class="subtitle">Canın ne çektiyse, Bi Bak Cafe’de var.</p>
+    <div class="topline"></div>
+    <div class="brand">Bi <span>Bak</span><small>CAFE</small></div>
+  </header>
+
+  <nav class="nav" aria-label="Menü kategorileri">
+    <a href="#sucuk">Sucuk Ekmek</a><a href="#tost">Tost</a><a href="#patso">Patso</a>
+    <a href="#kahvalti">Kahvaltı</a><a href="#ek-urun">Ek Ürünler</a><a href="#soguk">Soğuk İçecekler</a>
+    <a href="#sicak">Sıcak İçecekler</a><a href="#ogrenci">Öğrenci Menüleri</a>
+  </nav>
+
+  <main>
+    <section class="section" id="sucuk">
+      <div class="section-head"><span class="bar"></span><h2>Sucuk Ekmek Çeşitleri</h2><span class="count">3 ürün</span></div>
+      <div class="grid">
+        <article class="item"><div class="item-name">Klasik Sucuk Ekmek</div><div class="price">260 TL</div></article>
+        <article class="item"><div class="item-name">Kaşarlı Sucuk Ekmek</div><div class="price">280 TL</div></article>
+        <article class="item"><div class="item-name">Atom Sucuk Ekmek <div class="desc">Acılı</div></div><div class="price">300 TL</div></article>
+      </div>
+    </section>
+
+    <section class="section" id="tost">
+      <div class="section-head"><span class="bar"></span><h2>Tost Çeşitleri</h2><span class="count">4 ürün</span></div>
+      <div class="grid">
+        <article class="item"><div class="item-name">Kaşarlı Tost</div><div class="price">180 TL</div></article>
+        <article class="item"><div class="item-name">Sucuklu Tost</div><div class="price">200 TL</div></article>
+        <article class="item"><div class="item-name">Karışık Tost</div><div class="price">230 TL</div></article>
+        <article class="item"><div class="item-name">Ayvalık Tost</div><div class="price">280 TL</div></article>
+      </div>
+    </section>
+
+    <section class="section" id="patso">
+      <div class="section-head"><span class="bar"></span><h2>Patso Çeşitleri</h2><span class="count">5 ürün</span></div>
+      <div class="grid">
+        <article class="item"><div class="item-name">Klasik Patso</div><div class="price">170 TL</div></article>
+        <article class="item"><div class="item-name">Kaşarlı Patso</div><div class="price">190 TL</div></article>
+        <article class="item"><div class="item-name">Sucuklu Patso</div><div class="price">220 TL</div></article>
+        <article class="item"><div class="item-name">Sosisli Patso</div><div class="price">220 TL</div></article>
+        <article class="item"><div class="item-name">Karışık Patso</div><div class="price">240 TL</div></article>
+      </div>
+    </section>
+
+    <section class="section" id="kahvalti">
+      <div class="section-head"><span class="bar"></span><h2>Kahvaltılık Çeşitleri</h2><span class="count">4 ürün</span></div>
+      <div class="grid">
+        <article class="item"><div><div class="item-name">Simit Kahvaltı</div><div class="desc">Peynir, boncuk peynir, siyah zeytin, yeşil zeytin, çilek reçeli, haşlanmış yumurta, domates, salatalık, simit, 1 adet çay</div></div><div class="price">350 TL</div></article>
+        <article class="item"><div><div class="item-name">Serpme Kahvaltı <div class="desc">2 kişilik</div></div><div class="desc">Beyaz peynir, boncuk peynir, siyah zeytin, yeşil zeytin, reçel çeşitleri, bal, kaymak, tereyağı, tahin, pekmez, salam, domates, salatalık, kakaolu fındık kreması, patates kızartması, menemen, sahanda yumurta, 2 adet simit, 4 adet çay</div></div><div class="price">850 TL</div></article>
+        <article class="item"><div><div class="item-name">Paket Kahvaltı</div><div class="desc">Beyaz peynir, boncuk peynir, siyah zeytin, reçel çeşitleri, haşlanmış yumurta, domates, salatalık, kakaolu fındık kreması, patates kızartması, 1 adet simit</div></div><div class="price">450 TL</div></article>
+        <article class="item"><div><div class="item-name">Sıcak Kahvaltı</div><div class="desc">Menemen, simit, 2 adet çay</div></div><div class="price">250 TL</div></article>
+      </div>
+    </section>
+
+    <section class="section" id="ek-urun">
+      <div class="section-head"><span class="bar"></span><h2>Kahvaltılık Ek Ürünler</h2><span class="count">7 ürün</span></div>
+      <div class="grid">
+        <article class="item"><div class="item-name">Menemen</div><div class="price">200 TL</div></article>
+        <article class="item"><div class="item-name">Sucuklu Yumurta</div><div class="price">220 TL</div></article>
+        <article class="item"><div class="item-name">Kaşarlı Yumurta</div><div class="price">200 TL</div></article>
+        <article class="item"><div class="item-name">Sucuklu Kaşarlı Yumurta</div><div class="price">270 TL</div></article>
+        <article class="item"><div class="item-name">Patates Kızartması</div><div class="price">120 TL</div></article>
+        <article class="item"><div class="item-name">Soğan Halkası</div><div class="price">120 TL</div></article>
+        <article class="item"><div class="item-name">Nugget</div><div class="price">140 TL</div></article>
+      </div>
+    </section>
+
+    <section class="section" id="soguk">
+      <div class="section-head"><span class="bar"></span><h2>Soğuk İçecekler</h2><span class="count">9 ürün</span></div>
+      <div class="grid">
+        <article class="item"><div class="item-name">Kutu Kola</div><div class="price">90 TL</div></article>
+        <article class="item"><div class="item-name">Şişe Kola</div><div class="price">80 TL</div></article>
+        <article class="item"><div class="item-name">Meyveli Soda</div><div class="price">60 TL</div></article>
+        <article class="item"><div class="item-name">Sade Soda</div><div class="price">40 TL</div></article>
+        <article class="item"><div class="item-name">Meyve Suyu</div><div class="price">40 TL</div></article>
+        <article class="item"><div class="item-name">Büyük Ayran</div><div class="price">50 TL</div></article>
+        <article class="item"><div class="item-name">Küçük Ayran</div><div class="price">40 TL</div></article>
+        <article class="item"><div class="item-name">Ice Tea</div><div class="price">80 TL</div></article>
+        <article class="item"><div class="item-name">Su</div><div class="price">20 TL</div></article>
+      </div>
+    </section>
+
+    <section class="section" id="sicak">
+      <div class="section-head"><span class="bar"></span><h2>Sıcak İçecekler</h2><span class="count">6 ürün</span></div>
+      <div class="grid">
+        <article class="item"><div class="item-name">Türk Kahvesi</div><div class="price">100 TL</div></article>
+        <article class="item"><div class="item-name">Nescafe</div><div class="price">70 TL</div></article>
+        <article class="item"><div class="item-name">Sıcak Çikolata</div><div class="price">70 TL</div></article>
+        <article class="item"><div class="item-name">Sahlep</div><div class="price">100 TL</div></article>
+        <article class="item"><div class="item-name">Çay</div><div class="price">20 TL</div></article>
+        <article class="item"><div class="item-name">Fincan Çay</div><div class="price">40 TL</div></article>
+      </div>
+    </section>
+
+    <section class="section" id="ogrenci">
+      <div class="section-head"><span class="bar"></span><h2>Öğrenci Menüleri</h2><span class="count">4 menü</span></div>
+      <div class="grid">
+        <article class="item"><div><div class="item-name">1. Kaşarlı Tost Menü</div><div class="desc">Kaşarlı tost + küçük ayran</div></div><div class="price">200 TL</div></article>
+        <article class="item"><div><div class="item-name">2. Doyuran Menü</div><div class="desc">Karışık tost + küçük ayran + patates kızartması</div></div><div class="price">320 TL</div></article>
+        <article class="item"><div><div class="item-name">3. Klasik Patso Menü</div><div class="desc">Klasik patso + küçük ayran</div></div><div class="price">200 TL</div></article>
+        <article class="item"><div><div class="item-name">4. Klasik Sucuk Ekmek Menü</div><div class="desc">Klasik sucuk ekmek + küçük ayran</div></div><div class="price">280 TL</div></article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="brand">Bi <span>Bak</span><small>CAFE</small></div>
+    <div class="note">Lezzetli molaların buluşma noktası.</div>
+  </footer>
+</div>
+</body>
+</html>
